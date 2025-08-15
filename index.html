@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pahrump Realtor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cd3bff5ff2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <img src="assets/logo-white.png" alt="logo" />
+          </div>
+          <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Listings</a>
+            <a href="#">Let&apos;s Move</a>
+            <a href="#">About Us</a>
+          </div>
+        </div>
+        <div class="nav-contact">
+          <div class="nav-text">
+            <h2>MARCI METZGER - THE RIDGE REALTY GROUP</h2>
+            <h1>PAHRUMP REALTOR</h1>
+          </div>
+          <div class="nav-phone">
+            <button class="call-btn">
+              <i class="fa-solid fa-phone"></i> CALL NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="intro-realtor">
+        <div class="section-title">
+          <h2>MEET THE <g>EXPERT</g></h2>
+        </div>
+        <div class="intro-content">
+          <img src="assets/avatar.webp" alt="avatar" />
+          <div class="intro-text">
+            <p class="realtor-name">MARCI METZGER</p>
+            <p class="realtor-tag">
+              YOUR TRUSTED REALTOR FOR ALMOST 3 DECADES!
+            </p>
+            <p class="realtor-num">206-919-6886</p>
+            <button class="sched-btn">LET&apos;S TALK REAL ESTATE</button>
+          </div>
+        </div>
+      </section>
+      <section class="info-realtor">
+        <div class="section-title">
+          <h2>CONSIDER IT SOLD!</h2>
+        </div>
+        <div class="info-content">
+          <div class="info-img">
+            <img src="assets/sample1.webp" alt="sample1" />
+          </div>
+
+          <div class="info-details">
+            <div class="info-title">
+              <p>Top Residential Sales Last 5 Years</p>
+            </div>
+            <div class="info-highlight">
+              <div class="clients">
+                <p class="count">90</p>
+                <p class="unit">clients</p>
+              </div>
+              <div class="sales">
+                <p class="count">$28.5M</p>
+                <p class="unit">sales</p>
+              </div>
+            </div>
+            <p class="info-desc">
+              We helped nearly 90 clients in 2021, and closed 28.5 million in
+              sales! Our team works hard everyday to grow and learn, so that we
+              may continue to excel in our market. Our clients deserve our best,
+              & we want to make sure our best is better every year.
+            </p>
+            <div class="pill">
+              <p>Trusted by Many</p>
+            </div>
+          </div>
+        </div>
+        <div class="info-content">
+          <div class="info-details">
+            <div class="info-title">
+              <p>Don't Just List it...</p>
+            </div>
+            <div class="info-highlight">
+              <p class="hlight">Get It <u>SOLD!</u></p>
+            </div>
+            <p class="info-desc">
+              We exhaust every avenue to ensure our listings are at the
+              fingertips of every possible buyer, getting you top dollar for
+              your home.
+            </p>
+            <div class="pill">
+              <p>Get Your Home SOLD</p>
+            </div>
+          </div>
+          <div class="info-img">
+            <img src="assets/sample2.webp" alt="sample2" />
+          </div>
+        </div>
+        <div class="info-content">
+          <div class="info-img">
+            <img src="assets/sample3.png" alt="sample3" />
+          </div>
+
+          <div class="info-details">
+            <div class="info-title">
+              <p>Guide to Buyers</p>
+            </div>
+            <div class="info-highlight">
+              <p class="hlight"><g>Pro</g> at Service</p>
+            </div>
+            <p class="info-desc">
+              Nobody knows the market like we do. Enjoy having a pro at your
+              service. Market analysis, upgrades lists, contractors on speed
+              dial, & more!
+            </p>
+            <div class="pill">
+              <p>Backed with nearly 30 years of experience</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="info-content">
+          <img src="assets/sample2.webp" alt="sample2" />
+          <div class="info-title">
+            <p>Don't Just List it...</p>
+          </div>
+          <div class="info-details"></div>
+        </div>
+        <div class="info-content">
+          <img src="assets/sample3.webp" alt="sample3" />
+          <div class="info-title">
+            <p>Guide to Buyers</p>
+          </div>
+          <div class="info-details"></div>
+        </div> -->
+      </section>
+      <section class="sorting-section">
+        <div class="sorting-container">
+          <div class="section-img">
+            <img src="assets/find-bg.webp" alt="find-bg" />
+          </div>
+          <div class="sort-form">
+            <div class="form-title">
+              <h2>Find Your Dream <i>Home</i></h2>
+            </div>
+            <form>
+              <label for="location">Location</label>
+              <select name="location" id="location"></select>
+              <br />
+              <label for="type">Type</label>
+              <select name="type" id="type"></select>
+              <br />
+              <div class="horizontal">
+                <div class="selection">
+                  <label for="bedroom">Bedroom</label>
+                  <select name="bedroom" id="bedroom"></select>
+                </div>
+                <div class="selection">
+                  <label for="bathroom">Bathroom</label>
+                  <select name="bathroom" id="bathroom"></select>
+                </div>
+                <div class="selection">
+                  <label for="sort-by">Sort</label>
+                  <select name="sort-by" id="sort-by"></select>
+                </div>
+              </div>
+              <label for="minPrice">Price</label>
+              <div class="price-range">
+                <input
+                  type="number"
+                  id="minPrice"
+                  name="minPrice"
+                  placeholder="Min"
+                  min="0"
+                />
+                <span>-</span>
+                <input
+                  type="number"
+                  id="maxPrice"
+                  name="maxPrice"
+                  placeholder="Max"
+                  min="0"
+                />
+              </div>
+            </form>
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+      </section>
+      <section class="badges">
+        <div class="badges-container">
+          <div class="badge-img">
+            <img src="assets/partner1.webp" alt="partner1" />
+          </div>
+          <div class="badge-img">
+            <img src="assets/partner2.webp" alt="partner2" />
+          </div>
+          <div class="badge-img">
+            <img src="assets/partner3.webp" alt="partner3" />
+          </div>
+          <div class="badge-img">
+            <img src="assets/partner4.webp" alt="partner4" />
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="section-title">
+          <h2>PREVIEWS</h2>
+        </div>
+        <div class="gallery-container">
+          <div class="column">
+            <div class="row">
+              <img
+                src="assets/slide1.webp"
+                alt="slide1"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="row">
+              <img
+                src="assets/slide2.webp"
+                alt="slide2"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="row">
+              <img
+                src="assets/slide3.webp"
+                alt="slide3"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="row">
+              <img
+                src="assets/slide4.webp"
+                alt="slide4"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="row">
+              <img
+                src="assets/slide5.webp"
+                alt="slide5"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="row">
+              <img
+                src="assets/slide6.webp"
+                alt="slide6"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="row">
+              <img
+                src="assets/slide7.webp"
+                alt="slide7"
+                onclick="myFunction(this);"
+              />
+            </div>
+          </div>
+          <div class="gallery-display">
+            <!--this is where the picture shows-->
+            <img
+              id="expandedImg"
+              src="assets/slide1.webp"
+              alt="slide1"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
