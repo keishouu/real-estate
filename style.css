@@ -48,6 +48,66 @@ nav:before {
   z-index: 0;
 }
 
+.mobile-nav {
+  display: none;
+  background-color: #faf9f6;
+  position: relative;
+  z-index: 1;
+  color: #2f2f2f;
+}
+
+.mobile-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.menu-toggle {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 20px;
+}
+
+.mobile-logo {
+  margin: 0 auto;
+  width: 150px;
+}
+
+.mobile-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.mobile-navbar {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background: #faf9f6;
+  padding: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+  border-top: 1px solid #2f2f2f;
+}
+
+.mobile-navbar.show {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-navbar a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
 .nav-wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -75,20 +135,22 @@ nav:before {
 
 .navbar {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .navbar a {
   text-decoration: none;
   color: #faf9f6;
   font-weight: 500;
+  transition: background 0.3s ease;
+  padding: 10px 20px;
 }
 
-/* .navbar a:active {
-  background-color: #faf9f6;
+.navbar a.active {
+  background-color: #faf9f6; /* Change to your preferred color */
+  border-radius: 50px; /* Optional: rounded corners */
   color: #2f2f2f;
-  border-radius: 50px;
-} */
+}
 
 .nav-contact {
   display: flex;
@@ -585,4 +647,242 @@ hr {
 
 .copyright {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-wrapper {
+    min-height: 80vh;
+  }
+  .mobile-nav {
+    display: block;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .nav-contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-text {
+    margin-bottom: 100px;
+  }
+
+  .call-btn {
+    font-size: 1.2rem;
+  }
+
+  .nav-phone {
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-content,
+  .sorting-container,
+  .gallery-container,
+  .card-container,
+  .connect-container {
+    max-width: 600px;
+  }
+  .intro-content img {
+    width: 200px;
+  }
+
+  .realtor-name {
+    font-size: 2.2rem;
+  }
+  .realtor-tag,
+  .realtor-num {
+    font-size: 1rem;
+  }
+
+  .sched-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .info-content {
+    max-width: 600px;
+    height: 250px;
+    gap: 5px;
+  }
+
+  .info-details {
+    gap: 15px;
+  }
+
+  .info-img {
+    min-width: 200px;
+    height: 250px;
+  }
+
+  .info-title {
+    font-size: 1rem;
+  }
+
+  .unit,
+  .pill {
+    font-size: 0.8rem;
+  }
+
+  .count {
+    font-size: 1.5rem;
+  }
+
+  .hlight {
+    font-size: 1.5rem;
+  }
+  .info-desc {
+    font-size: 0.6rem;
+  }
+
+  .sorting-container {
+    flex-direction: column;
+  }
+  .section-img {
+    width: 100%;
+    height: 200px;
+  }
+  .sort-form {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  .form-title h2 {
+    font-size: 1.2rem;
+  }
+
+  .badge-img img {
+    height: 50px;
+  }
+
+  .row {
+    height: 50px;
+    width: 50px;
+  }
+
+  .card-img {
+    height: 170px;
+    width: 170px;
+  }
+
+  .card-title {
+    font-size: 0.8rem;
+  }
+
+  .card-desc {
+    font-size: 0.5rem;
+  }
+
+  .connect-container {
+    flex-direction: column;
+  }
+
+  .message-form {
+    padding-right: 0;
+    padding-bottom: 30px;
+    border-right: none;
+    border-bottom: 2px solid #c48a3b;
+  }
+
+  .whatsapp-btn {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-text h2 {
+    font-size: 1rem;
+  }
+
+  .nav-text h1 {
+    font-size: 2rem;
+  }
+
+  .call-btn {
+    border: 2px solid;
+    font-size: 1rem;
+  }
+
+  .call-btn i {
+    font-size: 0.9rem;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  .sched-btn {
+    margin: 0 auto;
+  }
+
+  .info-img {
+    display: none;
+  }
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .column {
+    flex-direction: row;
+  }
+
+  .row {
+    height: 45px;
+    width: 45px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-img {
+    width: 330px;
+  }
+
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .company-loc,
+  .company-num,
+  .hrs-title,
+  .company-sched {
+    font-size: 0.8rem;
+  }
+
+  .send-btn,
+  .whatsapp-btn {
+    font-size: 0.8rem;
+  }
+
+  .whatsapp-btn i {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
 }
