@@ -28,7 +28,7 @@ textarea {
 }
 
 nav {
-  background-image: url("../assets/banner.webp");
+  background-image: url("assets/banner.webp");
   width: 100%;
   height: auto;
   background-size: cover;
@@ -147,8 +147,8 @@ nav:before {
 }
 
 .navbar a.active {
-  background-color: #faf9f6; /* Change to your preferred color */
-  border-radius: 50px; /* Optional: rounded corners */
+  background-color: #faf9f6;
+  border-radius: 50px;
   color: #2f2f2f;
 }
 
