@@ -611,6 +611,10 @@ form select {
   margin-right: 5px;
 }
 
+#map {
+  height: 400px;
+}
+
 footer {
   background-color: #2f2f2f;
   color: #faf9f6;
@@ -647,6 +651,17 @@ hr {
 
 .copyright {
   text-align: center;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {

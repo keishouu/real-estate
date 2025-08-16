@@ -9,6 +9,17 @@
       src="https://kit.fontawesome.com/cd3bff5ff2.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <nav>
@@ -54,11 +65,11 @@
       </div>
     </nav>
     <div class="container">
-      <section class="intro-realtor">
+      <section class="intro-realtor scroll-reveal">
         <div class="section-title">
           <h2>MEET THE <g>EXPERT</g></h2>
         </div>
-        <div class="intro-content">
+        <div class="intro-content scroll-reveal">
           <img src="assets/avatar.webp" alt="avatar" />
           <div class="intro-text">
             <p class="realtor-name">MARCI METZGER</p>
@@ -70,7 +81,7 @@
           </div>
         </div>
       </section>
-      <section class="info-realtor">
+      <section class="info-realtor scroll-reveal">
         <div class="section-title">
           <h2>CONSIDER IT SOLD!</h2>
         </div>
@@ -162,7 +173,7 @@
           <div class="info-details"></div>
         </div> -->
       </section>
-      <section class="sorting-section">
+      <section class="sorting-section scroll-reveal">
         <div class="sorting-container">
           <div class="section-img">
             <img src="assets/find-bg.webp" alt="find-bg" />
@@ -215,7 +226,7 @@
           </div>
         </div>
       </section>
-      <section class="badges">
+      <section class="badges scroll-reveal">
         <div class="badges-container">
           <div class="badge-img">
             <img src="assets/partner1.webp" alt="partner1" />
@@ -231,7 +242,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery scroll-reveal">
         <div class="section-title">
           <h2>PREVIEWS</h2>
         </div>
@@ -298,7 +309,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services scroll-reveal">
         <div class="section-title">
           <h2>OUR SERVICES</h2>
         </div>
@@ -359,7 +370,7 @@
           </div>
         </div>
       </section>
-      <section class="connect">
+      <section class="connect scroll-reveal">
         <div class="section-title">
           <h2>WANT TO REACH OUT?</h2>
         </div>
@@ -369,13 +380,19 @@
               <h2>Send us a Message</h2>
             </div>
             <form>
-              <input type="text" name="fullName" placeholder="Full Name" />
-              <input type="text" name="email" placeholder="Email" />
+              <input
+                type="text"
+                name="fullName"
+                placeholder="Full Name"
+                required
+              />
+              <input type="text" name="email" placeholder="Email" required />
               <textarea
                 name="message"
                 id="message"
                 placeholder="Type Message Here..."
                 rows="10"
+                required
               ></textarea>
             </form>
             <button class="send-btn">Send Message</button>
@@ -412,7 +429,9 @@
         </div>
       </section>
     </div>
-    <div class="map-container"></div>
+    <div class="map-container scroll-reveal">
+      <div id="map"></div>
+    </div>
     <footer class="footer">
       <div class="social-container">
         <div class="social-title">

@@ -1,3 +1,20 @@
+const reveals = document.querySelectorAll(".scroll-reveal");
+
+const revealOnScroll = () => {
+  reveals.forEach((el) => {
+    const elementTop = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("show");
+    } else {
+      el.classList.remove("show"); // remove if you want re-trigger on scroll up
+    }
+  });
+};
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
 const navLinks = document.querySelectorAll(".navbar a");
 
 navLinks.forEach((link) => {
@@ -62,3 +79,18 @@ function fadeToImage(img) {
     expandImg.style.opacity = 1;
   }, 400);
 }
+
+var lat = 36.18399;
+var lng = -115.95526;
+
+var map = L.map("map").setView([lat, lng], 16);
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "&copy; OpenStreetMap contributors",
+}).addTo(map);
+
+var marker = L.marker([lat, lng]).addTo(map);
+
+marker
+  .bindPopup("<b>3190 S Hwy 160 Suite F</b><br>Pahrump, NV 89048")
+  .openPopup();
