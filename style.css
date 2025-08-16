@@ -816,7 +816,7 @@ hr {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .nav-text h2 {
     font-size: 1rem;
   }
