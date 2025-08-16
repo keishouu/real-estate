@@ -7,14 +7,13 @@ const revealOnScroll = () => {
 
     if (elementTop < windowHeight - 100) {
       el.classList.add("show");
-    } else {
-      el.classList.remove("show"); // remove if you want re-trigger on scroll up
     }
   });
 };
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
 const navLinks = document.querySelectorAll(".navbar a");
 
 navLinks.forEach((link) => {
